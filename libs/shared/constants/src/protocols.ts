@@ -3,7 +3,7 @@ import { defineMessage } from 'react-intl';
 import type { MessageDescriptor } from 'react-intl';
 
 export type SupportedProtocol =
-  | 'mstable'
+  | 'mfury'
   | 'curve'
   | 'convex'
   | 'aave'
@@ -16,13 +16,13 @@ export type Protocol = {
 };
 
 export const protocols: Record<SupportedProtocol, Protocol> = {
-  mstable: {
-    id: 'mstable',
-    name: 'mStable',
+  mfury: {
+    id: 'mfury',
+    name: 'mFury',
     description: defineMessage({
       defaultMessage:
-        'mStable is a protocol for yield aggregation and diversification.',
-      id: '7CAm2s',
+        'mFury is a protocol for yield aggregation and diversification.',
+      id: 'hSnF4O',
     }),
   },
   curve: {

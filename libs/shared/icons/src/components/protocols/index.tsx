@@ -3,7 +3,7 @@ import { SvgIcon } from '@mui/material';
 import { ReactComponent as AaveSvg } from './aave.svg';
 import { ReactComponent as ConvexSvg } from './convex.svg';
 import CRVWebp from './crv.webp';
-import { ReactComponent as MStableSvg } from './mstable.svg';
+import { ReactComponent as MFurySvg } from './mfury.svg';
 import { ReactComponent as UniswapSvg } from './uniswap.svg';
 
 import type { SvgIconProps } from '@mui/material';
@@ -19,8 +19,8 @@ export const CurveProtocol = (props: SvgIconProps) => (
     <image href={CRVWebp} height="100" width="100" />
   </SvgIcon>
 );
-export const MStableProtocol = (props: SvgIconProps) => (
-  <SvgIcon {...props} component={MStableSvg} viewBox="0 0 700 700" />
+export const MFuryProtocol = (props: SvgIconProps) => (
+  <SvgIcon {...props} component={MFurySvg} viewBox="0 0 700 700" />
 );
 export const UniswapProtocol = (props: SvgIconProps) => (
   <SvgIcon {...props} component={UniswapSvg} viewBox="40.04 0 470.19 541.43" />

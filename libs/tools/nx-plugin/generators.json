@@ -3,15 +3,15 @@
   "name": "tools-nx-plugin",
   "version": "0.0.1",
   "generators": {
-    "mstable-application": {
-      "factory": "./src/generators/mstable-application/generator",
-      "schema": "./src/generators/mstable-application/schema.json",
-      "description": "Create a React application for mStable workspace"
+    "mfury-application": {
+      "factory": "./src/generators/mfury-application/generator",
+      "schema": "./src/generators/mfury-application/schema.json",
+      "description": "Create a React application for mFury workspace"
     },
-    "mstable-library": {
-      "factory": "./src/generators/mstable-library/generator",
-      "schema": "./src/generators/mstable-library/schema.json",
-      "description": "Create a React library for mStable workspace"
+    "mfury-library": {
+      "factory": "./src/generators/mfury-library/generator",
+      "schema": "./src/generators/mfury-library/schema.json",
+      "description": "Create a React library for mFury workspace"
     }
   }
 }

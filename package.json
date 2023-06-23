@@ -1,12 +1,12 @@
 {
   "name": "frontend",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "GNU",
   "scripts": {
-    "start": "nx serve mstable",
-    "build": "nx build mstable",
+    "start": "nx serve mfury",
+    "build": "nx build mfury",
     "i18n:clear": "rimraf i18n-extractions",
-    "codegen": "nx run mstable-data-access:codegen",
+    "codegen": "nx run mfury-data-access:codegen",
     "lint": "nx lint",
     "lint:fix": "nx run-many --target=lint -- --fix",
     "prepare": "husky install"
@@ -37,6 +37,7 @@
     "immer": "^9.0.21",
     "phosphor-react": "^1.4.1",
     "plausible-tracker": "^0.3.8",
+    "pnpm": "^8.6.3",
     "ramda": "^0.29.0",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",

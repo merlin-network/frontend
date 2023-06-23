@@ -1,4 +1,4 @@
-export const vmtaABI = [
+export const vfuryABI = [
   {
     inputs: [
       { internalType: 'address', name: '_stakingToken', type: 'address' },

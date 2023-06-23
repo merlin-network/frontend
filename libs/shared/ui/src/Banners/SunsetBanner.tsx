@@ -20,8 +20,8 @@ export const SunsetBanner = (props: StackProps) => {
       <Warning sx={{ width: 28, height: 28 }} />
       <Typography textAlign="center">
         {intl.formatMessage({
-          defaultMessage: `mStable has been aquired by dHedge. Following the outlined aquisition update, certain mStable products will be sunset.`,
-          id: 'VXQPtq',
+          defaultMessage: `mFury has been aquired by dHedge. Following the outlined aquisition update, certain mFury products will be sunset.`,
+          id: 'Eznmdw',
         })}
       </Typography>
       <Typography textAlign="center">
@@ -31,7 +31,7 @@ export const SunsetBanner = (props: StackProps) => {
         })}
       </Typography>
       <Button
-        href="https://medium.com/mstable/mstable-acquisition-completed-by-dhedge-the-next-chapter-of-defi-yield-vaults-begins-79a326157132"
+        href="https://medium.com/mfury/mfury-acquisition-completed-by-dhedge-the-next-chapter-of-defi-yield-vaults-begins-79a326157132"
         target="_blank"
         rel="noopener noreferrer"
       >

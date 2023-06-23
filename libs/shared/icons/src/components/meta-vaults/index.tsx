@@ -3,7 +3,7 @@ import { SvgIcon } from '@mui/material';
 import { ReactComponent as MvDAISvg } from './mvDAI.svg';
 import { ReactComponent as MvETHSvg } from './mvETH.svg';
 import { ReactComponent as MvFraxSvg } from './mvFrax.svg';
-import { ReactComponent as MvMTASvg } from './mvMTA.svg';
+import { ReactComponent as MvFURYSvg } from './mvFURY.svg';
 import { ReactComponent as MvMUSDSvg } from './mvMUSD.svg';
 import { ReactComponent as MvUSDCSvg } from './mvUSDC.svg';
 
@@ -18,8 +18,8 @@ export const MvETH = (props: SvgIconProps) => (
 export const MvFrax = (props: SvgIconProps) => (
   <SvgIcon {...props} component={MvFraxSvg} viewBox="0 0 65 65" />
 );
-export const MvMTA = (props: SvgIconProps) => (
-  <SvgIcon {...props} component={MvMTASvg} viewBox="0 0 96 96" />
+export const MvFURY = (props: SvgIconProps) => (
+  <SvgIcon {...props} component={MvFURYSvg} viewBox="0 0 96 96" />
 );
 export const MvMUSD = (props: SvgIconProps) => (
   <SvgIcon {...props} component={MvMUSDSvg} viewBox="0 0 120 120" />

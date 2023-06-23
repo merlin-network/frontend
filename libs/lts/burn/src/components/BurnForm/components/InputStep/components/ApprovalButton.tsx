@@ -24,15 +24,15 @@ export const ApprovalButton = (props: ButtonProps) => {
   const intl = useIntl();
   const { chain } = useNetwork();
   const pushNotification = usePushNotification();
-  const { mta, needsApproval, isError, refetch } = useTrackedState();
+  const { fury, needsApproval, isError, refetch } = useTrackedState();
 
   const { config } = usePrepareContractWrite({
-    address: mta.contract.address,
-    abi: mta.contract.abi,
+    address: fury.contract.address,
+    abi: fury.contract.abi,
     functionName: 'approve',
     args: [
       chain?.id === mainnet.id ? l1Comptroller.address : l2Comptroller.address,
-      mta.balance.exact,
+      fury.balance.exact,
     ],
     chainId: chain?.id,
     enabled: needsApproval,

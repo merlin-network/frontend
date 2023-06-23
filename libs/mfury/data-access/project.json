@@ -1,0 +1,31 @@
+{
+  "name": "mfury-data-access",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/mfury/data-access/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "codegen": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["yarn nx run mfury-data-access:codegen-graphql"],
+        "parallel": false
+      }
+    },
+    "codegen-graphql": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "yarn graphql-codegen --config 'libs/mfury/data-access/codegen.js'"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/mfury/data-access/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

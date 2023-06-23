@@ -15,22 +15,22 @@ export const WithdrawStep = (props: MotionStackProps) => {
       <Typography variant="h4" mb={4}>
         {intl.formatMessage({
           defaultMessage:
-            'Withdraw your mStable Treasury Yield tokens to stables',
-          id: 'NnFu82',
+            'Withdraw your mFury Treasury Yield tokens to stables',
+          id: 'KAjgSS',
         })}
       </Typography>
       <Typography mb={2}>
         {intl.formatMessage({
           defaultMessage:
-            'Your mStable Treasury Yield tokens are earning yield and you can hold on to them.<br></br>Optionally you can go to dHEDGE app to withdraw your MTy tokens to stablecoins.',
-          id: 'a42kxt',
+            'Your mFury Treasury Yield tokens are earning yield and you can hold on to them.<br></br>Optionally you can go to dHEDGE app to withdraw your MTy tokens to stablecoins.',
+          id: 'oa9/wC',
         })}
       </Typography>
       <Typography>
         {intl.formatMessage({
           defaultMessage:
-            'If you burned MTA from Ethereum, please wait while the bridge issues your MTy tokens.',
-          id: 'URTaZg',
+            'If you burned FURY from Ethereum, please wait while the bridge issues your MTy tokens.',
+          id: '0ZWv7O',
         })}
       </Typography>
       <Stack direction="row" my={4} justifyContent="center" alignItems="center">

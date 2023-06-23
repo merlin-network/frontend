@@ -7,7 +7,7 @@ import {
   light,
   rbkDarkTheme,
   rbkLightTheme,
-} from '@frontend/mstable-theme';
+} from '@frontend/mfury-theme';
 import {
   I18nProvider,
   ModalsProvider,

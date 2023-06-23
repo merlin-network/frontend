@@ -24,7 +24,7 @@ export const routes: Route<LTSRoute>[] = [
   {
     id: 'burn',
     meta: {
-      label: defineMessage({ defaultMessage: 'BuyBack MTA', id: '6T7RIi' }),
+      label: defineMessage({ defaultMessage: 'BuyBack FURY', id: 'M9+S81' }),
     },
     path: '/burn',
     element: <Burn />,

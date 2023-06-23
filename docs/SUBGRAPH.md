@@ -1,6 +1,6 @@
 # Meta Vault Subgraph
 
-We use [TheGraph](https://thegraph.com/) to easily consume on-chain data in the frontend. To keep track of all the historicized metrics we need, we've published the [Meta Vault Subgraph](https://thegraph.com/studio/subgraph/mstable-meta-vaults/).
+We use [TheGraph](https://thegraph.com/) to easily consume on-chain data in the frontend. To keep track of all the historicized metrics we need, we've published the [Meta Vault Subgraph](https://thegraph.com/studio/subgraph/mfury-meta-vaults/).
 
 The code for generating and deploying this subgraph is located in the libs/subgraph folder of our monorepo.
 
@@ -29,8 +29,8 @@ nx build subgraph
 
 To deploy the subgraph from your local environment, use the `graph deploy` command and pass the subgraph names:
 
-- mainnet: `mstable-meta-vaults`
-- goerli: `mstable-metavault-goerli`
+- mainnet: `mfury-meta-vaults`
+- goerli: `mfury-metavault-goerli`
 
 ```bash
 yarn graph deploy --studio <SUBGRAPH STUDIO NAME> -o ./libs/subgraph/build ./libs/subgraph/subgraph.yaml
@@ -43,7 +43,7 @@ You'll be prompted for the version number, which you should increment following 
 ```bash
 nx prepare subgraph --network=mainnet
 nx build subgraph
-yarn graph deploy --studio mstable-meta-vaults -o ./libs/subgraph/build ./libs/subgraph/subgraph.yaml
+yarn graph deploy --studio mfury-meta-vaults -o ./libs/subgraph/build ./libs/subgraph/subgraph.yaml
 ```
 
 ## Use latest version

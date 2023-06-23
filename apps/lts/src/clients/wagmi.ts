@@ -48,7 +48,7 @@ const connectors = connectorsForWallets([
       metaMaskWallet({ chains, shimDisconnect: true }),
       ledgerWallet({ chains }),
       walletConnectWallet({ chains }),
-      coinbaseWallet({ appName: 'mStable', chains }),
+      coinbaseWallet({ appName: 'mFury', chains }),
     ],
   },
   {

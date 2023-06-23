@@ -21,14 +21,14 @@ export const useSetStep = () => {
   );
 };
 
-export const useSetMTAAmount = () => {
+export const useSetFURYAmount = () => {
   const update = useUpdate();
 
   return useCallback(
     (amount: BigDecimal) => {
       update(
         produce((draft) => {
-          draft.mta.amount = amount;
+          draft.fury.amount = amount;
         }),
       );
     },

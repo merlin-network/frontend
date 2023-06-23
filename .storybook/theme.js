@@ -2,8 +2,8 @@ import { create } from '@storybook/theming';
 
 export default create({
   base: 'light',
-  brandTitle: 'mStable',
+  brandTitle: 'mFury',
   brandImage:
-    'https://raw.githubusercontent.com/mstable/mStable-apps/master/libs/icons/src/lib/mstable.svg',
+    'https://raw.githubusercontent.com/mfury/mFury-apps/master/libs/icons/src/lib/mfury.svg',
   brandTarget: '_self',
 });

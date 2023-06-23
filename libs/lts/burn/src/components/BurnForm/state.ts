@@ -8,11 +8,11 @@ import { useAccount, useContractReads, useNetwork } from 'wagmi';
 import { mainnet, optimism } from 'wagmi/chains';
 
 import {
+  furyBuybackPrice,
   l1Comptroller,
   l2Comptroller,
-  mtaBuybackPrice,
   mtyPool,
-  velodromeMtaUsdcLP,
+  velodromeFuryUsdcLP,
 } from '../../constants';
 
 import type { Token } from '@frontend/shared-constants';
@@ -30,7 +30,7 @@ type StateProps = {
   isLoading: boolean;
   isError: boolean;
   needsApproval: boolean;
-  mta: InputProps;
+  fury: InputProps;
   mty: InputProps;
   refetch: () => void;
   reset: () => void;
@@ -45,11 +45,11 @@ export const { Provider, useTrackedState, useUpdate } = createContainer(() => {
     isLoading: true,
     isError: false,
     needsApproval: true,
-    mta: {
+    fury: {
       amount: BigDecimal.ZERO,
       balance: BigDecimal.ZERO,
       price: 0,
-      contract: toks[mainnet.id]['MTA'],
+      contract: toks[mainnet.id]['FURY'],
     },
     mty: {
       amount: BigDecimal.ZERO,
@@ -64,7 +64,7 @@ export const { Provider, useTrackedState, useUpdate } = createContainer(() => {
   useEffect(() => {
     setState(
       produce((draft) => {
-        draft.mta.contract = toks[chain?.id ?? mainnet.id]['MTA'];
+        draft.fury.contract = toks[chain?.id ?? mainnet.id]['FURY'];
       }),
     );
   }, [chain?.id]);
@@ -80,16 +80,16 @@ export const { Provider, useTrackedState, useUpdate } = createContainer(() => {
   const { data, isLoading, refetch } = useContractReads({
     contracts: [
       {
-        address: state.mta.contract.address,
-        abi: state.mta.contract.abi,
+        address: state.fury.contract.address,
+        abi: state.fury.contract.abi,
         functionName: 'allowance',
-        chainId: state.mta.contract.chainId,
+        chainId: state.fury.contract.chainId,
         args: allArgs,
       },
       {
-        address: state.mta.contract.address,
-        abi: state.mta.contract.abi,
-        chainId: state.mta.contract.chainId,
+        address: state.fury.contract.address,
+        abi: state.fury.contract.abi,
+        chainId: state.fury.contract.chainId,
         functionName: 'balanceOf',
         args: [walletAddress],
       },
@@ -107,9 +107,9 @@ export const { Provider, useTrackedState, useUpdate } = createContainer(() => {
         functionName: 'tokenPrice',
       },
       {
-        address: velodromeMtaUsdcLP.address,
-        abi: velodromeMtaUsdcLP.abi,
-        chainId: velodromeMtaUsdcLP.chainId,
+        address: velodromeFuryUsdcLP.address,
+        abi: velodromeFuryUsdcLP.abi,
+        chainId: velodromeFuryUsdcLP.chainId,
         functionName: 'getAmountOut',
         args: [
           BigDecimal.ONE.scale(toks[optimism.id]['USDC'].decimals).exact,
@@ -124,15 +124,15 @@ export const { Provider, useTrackedState, useUpdate } = createContainer(() => {
     if (data) {
       setState(
         produce((draft) => {
-          draft.needsApproval = state.mta.amount.exact.gt(
+          draft.needsApproval = state.fury.amount.exact.gt(
             new BigDecimal(
               data[0] as unknown as BigNumberish,
-              state.mta.contract.decimals,
+              state.fury.contract.decimals,
             ).exact,
           );
-          draft.mta.balance = new BigDecimal(
+          draft.fury.balance = new BigDecimal(
             data[1] as unknown as BigNumberish,
-            state.mta.contract.decimals,
+            state.fury.contract.decimals,
           );
           draft.mty.balance = new BigDecimal(
             data[2] as unknown as BigNumberish,
@@ -144,26 +144,26 @@ export const { Provider, useTrackedState, useUpdate } = createContainer(() => {
           ).simple;
           const price = new BigDecimal(
             data[4] as unknown as BigNumberish,
-            draft.mta.contract.decimals,
+            draft.fury.contract.decimals,
           ).simple;
-          draft.mta.price = price === 0 ? 0 : 1 / price;
+          draft.fury.price = price === 0 ? 0 : 1 / price;
         }),
       );
     }
   }, [
     data,
     refetch,
-    state.mta.amount.exact,
-    state.mta.contract.decimals,
+    state.fury.amount.exact,
+    state.fury.contract.decimals,
     state.mty.contract.decimals,
   ]);
 
   const reset = useCallback(() => {
     setState(
       produce((draft) => {
-        draft.mta.amount = BigDecimal.ZERO;
-        draft.mta.amount = BigDecimal.ZERO;
-        draft.mta.balance = BigDecimal.ZERO;
+        draft.fury.amount = BigDecimal.ZERO;
+        draft.fury.amount = BigDecimal.ZERO;
+        draft.fury.balance = BigDecimal.ZERO;
         draft.mty.balance = BigDecimal.ZERO;
         draft.mty.balance = BigDecimal.ZERO;
         draft.needsApproval = true;
@@ -177,12 +177,12 @@ export const { Provider, useTrackedState, useUpdate } = createContainer(() => {
     setState(
       produce((draft) => {
         draft.mty.amount = BigDecimal.fromSimple(
-          (draft.mta.amount.simple * mtaBuybackPrice) /
+          (draft.fury.amount.simple * furyBuybackPrice) /
             (draft.mty.price === 0 ? 1 : draft.mty.price),
         );
       }),
     );
-  }, [state.mta.amount.exact]);
+  }, [state.fury.amount.exact]);
 
   useEffect(() => {
     setState(
@@ -197,10 +197,10 @@ export const { Provider, useTrackedState, useUpdate } = createContainer(() => {
   useEffect(() => {
     setState(
       produce((draft) => {
-        draft.isError = state.mta.amount.exact.gt(state.mta.balance.exact);
+        draft.isError = state.fury.amount.exact.gt(state.fury.balance.exact);
       }),
     );
-  }, [state.mta.amount.exact, state.mta.balance.exact]);
+  }, [state.fury.amount.exact, state.fury.balance.exact]);
 
   useEffect(() => {
     if (!isConnected) {

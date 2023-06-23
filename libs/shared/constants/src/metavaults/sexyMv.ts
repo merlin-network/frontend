@@ -49,10 +49,10 @@ const goer: Metavault = {
   }),
   strategies: [
     {
-      protocol: protocols.mstable,
+      protocol: protocols.mfury,
       strategy: defineMessage({
-        defaultMessage: 'Yeah only mStable baby!',
-        id: 'il6pe+',
+        defaultMessage: 'Yeah only mFury baby!',
+        id: 'M0fit0',
       }),
     },
   ],

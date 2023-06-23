@@ -7,7 +7,7 @@
   "files": [
     "../../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
     "../../../node_modules/@nrwl/react/typings/image.d.ts",
-    "../../mstable/theme/src/mui/types.ts",
+    "../../mfury/theme/src/mui/types.ts",
   ],
   "exclude": [
     "jest.config.ts",

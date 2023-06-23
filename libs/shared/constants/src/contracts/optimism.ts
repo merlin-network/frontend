@@ -23,6 +23,6 @@ export const contractsOptimism: Contract[] = [
     address: '0x66a8bD7cCfD52bfb5bC838d149FBa78e6920303F',
     chainId: optimism.id,
     abi: VelodromeV1PoolABI,
-    name: 'VolatileV1 AMM - USDC/MTA',
+    name: 'VolatileV1 AMM - USDC/FURY',
   },
 ];

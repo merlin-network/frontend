@@ -1,21 +1,21 @@
 import {
   StakedTokenBPTABI,
-  StakedTokenMTAABI,
+  StakedTokenFURYABI,
 } from '@frontend/shared-constants';
-import { MBTC, MTA } from '@frontend/shared-icons';
+import { FURY, MBTC } from '@frontend/shared-icons';
 import { mainnet } from 'wagmi';
 
 import type { Contract } from './types';
 
 export const governances: Contract[] = [
   {
-    name: 'Staked MTA',
+    name: 'Staked FURY',
     address: '0x8f2326316eC696F6d023E37A9931c2b2C177a3D7',
     type: 'governance',
     decimals: 18,
-    symbol: 'stkMTA',
-    icon: MTA,
-    abi: StakedTokenMTAABI,
+    symbol: 'stkFURY',
+    icon: FURY,
+    abi: StakedTokenFURYABI,
     chainId: mainnet.id,
     balanceFn: 'rawBalanceOf',
     balanceSelect: (res) => res[0],

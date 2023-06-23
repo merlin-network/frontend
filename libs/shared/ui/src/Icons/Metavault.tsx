@@ -1,5 +1,5 @@
 import { MvUSDC } from '@frontend/shared-icons';
-import { tokens } from '@mstable/metavaults-web';
+import { tokens } from '@mfury/metavaults-web';
 import { SvgIcon } from '@mui/material';
 import { CurrencyCircleDollar } from 'phosphor-react';
 import { mainnet } from 'wagmi/chains';

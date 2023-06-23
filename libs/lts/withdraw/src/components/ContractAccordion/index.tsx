@@ -38,8 +38,8 @@ const getTitle = (cat: ContractType) =>
     vault: defineMessage({ defaultMessage: 'Vaults', id: 's2zphO' }),
     legacypool: defineMessage({ defaultMessage: 'Legacy Pools', id: 'cA+gxG' }),
     governance: defineMessage({
-      defaultMessage: 'MTA Governance',
-      id: 'yzP6XU',
+      defaultMessage: 'FURY Governance',
+      id: '8KRo0k',
     }),
     metavault: defineMessage({ defaultMessage: 'Meta Vaults', id: 'SRo6uF' }),
   }[cat]);

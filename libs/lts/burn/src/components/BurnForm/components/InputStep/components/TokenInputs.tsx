@@ -4,7 +4,7 @@ import { ArrowFatDown } from 'phosphor-react';
 import { useIntl } from 'react-intl';
 import { useAccount } from 'wagmi';
 
-import { useSetMTAAmount } from '../../../hooks';
+import { useSetFURYAmount } from '../../../hooks';
 import { useTrackedState } from '../../../state';
 
 import type { BoxProps } from '@mui/material';
@@ -12,11 +12,11 @@ import type { BoxProps } from '@mui/material';
 export const TokenInputs = (props: BoxProps) => {
   const intl = useIntl();
   const { isConnected } = useAccount();
-  const { mta, mty, isLoading, isError } = useTrackedState();
-  const setMTAAmount = useSetMTAAmount();
+  const { fury, mty, isLoading, isError } = useTrackedState();
+  const setFURYAmount = useSetFURYAmount();
 
   const handleSetMax = () => {
-    setMTAAmount(mta.balance);
+    setFURYAmount(fury.balance);
   };
 
   return (
@@ -34,13 +34,13 @@ export const TokenInputs = (props: BoxProps) => {
       }}
     >
       <TokenInput
-        amount={mta.amount}
-        max={mta.balance}
+        amount={fury.amount}
+        max={fury.balance}
         error={isError}
-        onChange={setMTAAmount}
-        token={mta.contract}
+        onChange={setFURYAmount}
+        token={fury.contract}
         hideBottomRow
-        disabled={!isConnected || mta.balance.exact.isZero()}
+        disabled={!isConnected || fury.balance.exact.isZero()}
         components={{
           container: {
             width: 1,
@@ -65,7 +65,7 @@ export const TokenInputs = (props: BoxProps) => {
               currency: 'USD',
               style: 'currency',
               maximumSignificantDigits: 2,
-            }).format(mta.price)
+            }).format(fury.price)
           )}
         </Typography>
         {isConnected &&
@@ -89,7 +89,7 @@ export const TokenInputs = (props: BoxProps) => {
                   id: 'vclhrb',
                 },
                 {
-                  balance: mta.balance.simpleRounded,
+                  balance: fury.balance.simpleRounded,
                 },
               )}
             </Button>

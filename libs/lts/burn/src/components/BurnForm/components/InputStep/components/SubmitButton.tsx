@@ -33,7 +33,7 @@ export const SubmitButton = ({ disabled }: SubmitButtonProps) => {
   const { chain } = useNetwork();
   const pushNotification = usePushNotification();
   const { address: walletAddress } = useAccount();
-  const { mta, isError, needsApproval, reset } = useTrackedState();
+  const { fury, isError, needsApproval, reset } = useTrackedState();
 
   const config = useMemo(
     () =>
@@ -43,18 +43,18 @@ export const SubmitButton = ({ disabled }: SubmitButtonProps) => {
             abi: l1Comptroller.abi,
             chainId: l1Comptroller.chainId,
             functionName: 'buyBackOnL2',
-            args: [walletAddress, mta.amount.exact],
-            enabled: !isError && mta.amount.exact.gt(constants.Zero),
+            args: [walletAddress, fury.amount.exact],
+            enabled: !isError && fury.amount.exact.gt(constants.Zero),
           }
         : {
             address: l2Comptroller.address,
             abi: l2Comptroller.abi,
             chainId: l2Comptroller.chainId,
             functionName: 'buyBack',
-            args: [walletAddress, mta.amount.exact],
-            enabled: !isError && mta.amount.exact.gt(constants.Zero),
+            args: [walletAddress, fury.amount.exact],
+            enabled: !isError && fury.amount.exact.gt(constants.Zero),
           },
-    [chain?.id, isError, mta.amount.exact, walletAddress],
+    [chain?.id, isError, fury.amount.exact, walletAddress],
   );
 
   const { data: submitConfig } = usePrepareContractWrite(config);
@@ -69,8 +69,8 @@ export const SubmitButton = ({ disabled }: SubmitButtonProps) => {
     onSuccess: (data) => {
       pushNotification({
         title: intl.formatMessage({
-          defaultMessage: 'MTA Buyback',
-          id: 'Au/yTc',
+          defaultMessage: 'FURY Buyback',
+          id: 'yohYGc',
         }),
         content: (
           <ViewEtherscanLink
@@ -135,12 +135,12 @@ export const SubmitButton = ({ disabled }: SubmitButtonProps) => {
     onSettled: reset,
   });
 
-  if (!mta.amount || needsApproval || mta.amount.exact.eq(constants.Zero)) {
+  if (!fury.amount || needsApproval || fury.amount.exact.eq(constants.Zero)) {
     return (
       <Button {...buttonProps} disabled>
         {intl.formatMessage({
-          defaultMessage: 'Burn MTA and receive MTy on Optimism',
-          id: 'WZwD4F',
+          defaultMessage: 'Burn FURY and receive MTy on Optimism',
+          id: 'acUnpl',
         })}
       </Button>
     );
@@ -179,8 +179,8 @@ export const SubmitButton = ({ disabled }: SubmitButtonProps) => {
   return (
     <Button {...buttonProps} onClick={submit} disabled={disabled}>
       {intl.formatMessage({
-        defaultMessage: 'Burn MTA and receive MTy on Optimism',
-        id: 'WZwD4F',
+        defaultMessage: 'Burn FURY and receive MTy on Optimism',
+        id: 'acUnpl',
       })}
     </Button>
   );

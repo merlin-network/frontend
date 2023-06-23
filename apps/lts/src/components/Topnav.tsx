@@ -1,5 +1,5 @@
 import { SettingsButton } from '@frontend/lts-settings';
-import { MStable, MStableShort } from '@frontend/shared-icons';
+import { MFury, MFuryShort } from '@frontend/shared-icons';
 import {
   OpenAccountModalButton,
   OpenNetworkModalButton,
@@ -58,7 +58,7 @@ export const Topnav = () => {
           }}
           sx={{ ml: -2 }}
         >
-          {wide ? <MStable sx={{ minWidth: 120 }} /> : <MStableShort />}
+          {wide ? <MFury sx={{ minWidth: 120 }} /> : <MFuryShort />}
         </Button>
         <Stack
           flexGrow={1}

@@ -1,4 +1,4 @@
-export const StakedTokenMTAABI = [
+export const StakedTokenFURYABI = [
   {
     inputs: [
       { internalType: 'address', name: '_nexus', type: 'address' },

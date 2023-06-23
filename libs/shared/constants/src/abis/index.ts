@@ -5,6 +5,6 @@ export * from './SaveABI';
 export * from './StableABI';
 export * from './StakingABI';
 export * from './StakedTokenBPTABI';
-export * from './StakedTokenMTAABI';
+export * from './StakedTokenFURYABI';
 export * from './UniswapStakedContractABI';
-export * from './vmtaABI';
+export * from './vfuryABI';

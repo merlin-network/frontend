@@ -6,7 +6,7 @@ import { constants } from 'ethers';
 import { useIntl } from 'react-intl';
 import { useAccount } from 'wagmi';
 
-import { mtaBuybackPrice } from '../../../../constants';
+import { furyBuybackPrice } from '../../../../constants';
 import { useSetStep } from '../../hooks';
 import { useTrackedState } from '../../state';
 import { ApprovalButton } from './components/ApprovalButton';
@@ -17,7 +17,7 @@ import type { MotionStackProps } from '@frontend/shared-ui';
 export const InputStep = (props: MotionStackProps) => {
   const intl = useIntl();
   const { isConnected } = useAccount();
-  const { mta, mty, needsApproval } = useTrackedState();
+  const { fury, mty, needsApproval } = useTrackedState();
   const setStep = useSetStep();
 
   return (
@@ -25,16 +25,16 @@ export const InputStep = (props: MotionStackProps) => {
       <Typography variant="h4" mb={4}>
         {intl.formatMessage({
           defaultMessage:
-            'Burn your MTA tokens to receive mStable Treasury Yield tokens',
-          id: '5WragJ',
+            'Burn your FURY tokens to receive mFury Treasury Yield tokens',
+          id: 'EkKL8A',
         })}
       </Typography>
       <Typography>
         {intl.formatMessage(
           {
             defaultMessage:
-              'Burn MTA to receive {yield} vault tokens on Optimism at a value of <b>{price}</b> per MTA.<br></br>Here is the {roadmap} to help you make a better informed decision.',
-            id: '5eoReb',
+              'Burn FURY to receive {yield} vault tokens on Optimism at a value of <b>{price}</b> per FURY.<br></br>Here is the {roadmap} to help you make a better informed decision.',
+            id: 'UMUlwc',
           },
           {
             yield: (
@@ -44,8 +44,8 @@ export const InputStep = (props: MotionStackProps) => {
                 rel="noopener noreferrer"
               >
                 {intl.formatMessage({
-                  defaultMessage: 'mStable Treasury Yield',
-                  id: 'yNEh8X',
+                  defaultMessage: 'mFury Treasury Yield',
+                  id: 'BKPFUy',
                 })}
               </Link>
             ),
@@ -53,16 +53,16 @@ export const InputStep = (props: MotionStackProps) => {
               currency: 'USD',
               style: 'currency',
               maximumSignificantDigits: 4,
-            }).format(mtaBuybackPrice),
+            }).format(furyBuybackPrice),
             roadmap: (
               <Link
-                href="https://medium.com/mstable/some-article"
+                href="https://medium.com/mfury/some-article"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {intl.formatMessage({
-                  defaultMessage: 'mStable roadmap',
-                  id: 'iD4mN7',
+                  defaultMessage: 'mFury roadmap',
+                  id: 'nSzbu7',
                 })}
               </Link>
             ),
@@ -74,8 +74,8 @@ export const InputStep = (props: MotionStackProps) => {
           <TokenInputs mb={4} />
           {isConnected ? (
             <>
-              {mta.balance.exact.gt(constants.Zero) &&
-                mta.price > mtaBuybackPrice && (
+              {fury.balance.exact.gt(constants.Zero) &&
+                fury.price > furyBuybackPrice && (
                   <Stack spacing={2} alignItems="center" mb={2}>
                     <Typography
                       sx={{

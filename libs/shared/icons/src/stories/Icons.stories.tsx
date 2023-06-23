@@ -3,7 +3,7 @@ import { IconsView } from '@frontend/tools-storybook';
 
 import * as chainIcons from '../components/chains';
 import * as mvIcons from '../components/meta-vaults';
-import * as mstableIcons from '../components/mstable';
+import * as mfuryIcons from '../components/mfury';
 import * as protocolIcons from '../components/protocols';
 import * as socialIcons from '../components/social';
 import * as tokenIcons from '../components/tokens';
@@ -19,8 +19,8 @@ ChainIcons.args = { icons: chainIcons };
 export const MetaVaultIcons = IconsView.bind({});
 MetaVaultIcons.args = { icons: mvIcons };
 
-export const MStableIcons = IconsView.bind({});
-MStableIcons.args = { icons: mstableIcons };
+export const MFuryIcons = IconsView.bind({});
+MFuryIcons.args = { icons: mfuryIcons };
 
 export const ProtocolIcons = IconsView.bind({});
 ProtocolIcons.args = { icons: protocolIcons };

@@ -5,7 +5,7 @@ import type { Token } from './types';
 export const toksPolygon: Token[] = [
   {
     address: '0xf501dd45a1198c2e1b5aef5314a68b9006d842e0',
-    symbol: 'MTA',
+    symbol: 'FURY',
     decimals: 18,
     chainId: 137,
     abi: erc20ABI,

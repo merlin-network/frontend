@@ -2,7 +2,7 @@ export * from './abis';
 export * from './contracts';
 export * from './metavaults';
 export * from './etherscan';
-export * from './mstable';
+export * from './mfury';
 export * from './prices';
 export * from './protocols';
 export * from './thegraph';

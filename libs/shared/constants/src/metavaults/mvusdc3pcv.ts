@@ -3,7 +3,7 @@ import { ConvexProtocol, CurveProtocol, MvUSDC } from '@frontend/shared-icons';
 import {
   Curve3CrvBasicMetaVaultABI,
   PeriodicAllocationPerfFeeMetaVaultABI,
-} from '@mstable/metavaults-web';
+} from '@mfury/metavaults-web';
 import { defineMessage } from 'react-intl';
 import { erc4626ABI } from 'wagmi';
 import { goerli, mainnet } from 'wagmi/chains';
@@ -97,7 +97,7 @@ const main: Metavault = {
   }),
   strategies: [
     {
-      protocol: protocols.mstable,
+      protocol: protocols.mfury,
       strategy: defineMessage({
         defaultMessage:
           'The Strategy uses Meta Vault and Vault contracts and combines and wraps the underlying strategies into one contract.',

@@ -1,9 +1,9 @@
 import {
   BalancerPoolTokenABI,
   UniswapStakedContractABI,
-  vmtaABI,
+  vfuryABI,
 } from '@frontend/shared-constants';
-import { Balancer, MTA, UniswapProtocol } from '@frontend/shared-icons';
+import { Balancer, FURY, UniswapProtocol } from '@frontend/shared-icons';
 import { mainnet } from 'wagmi/chains';
 
 import type { Contract } from './types';
@@ -12,7 +12,7 @@ export const legacyPools: Contract[] = [
   {
     address: '0x9b4aba35b35eee7481775ccb4055ce4e176c9a6f',
     type: 'legacypool',
-    name: 'MTA/WETH Uniswap',
+    name: 'FURY/WETH Uniswap',
     decimals: 18,
     symbol: 'UNI-V2',
     icon: UniswapProtocol,
@@ -23,7 +23,7 @@ export const legacyPools: Contract[] = [
   {
     address: '0x0d4cd2c24a4c9cd31fcf0d3c4682d234d9f94be4',
     type: 'legacypool',
-    name: ' mUSD/MTA Balancer',
+    name: ' mUSD/FURY Balancer',
     decimals: 18,
     symbol: 'BPT',
     icon: Balancer,
@@ -34,7 +34,7 @@ export const legacyPools: Contract[] = [
   {
     address: '0x25970282aac735cd4c76f30bfb0bf2bc8dad4e70',
     type: 'legacypool',
-    name: ' mUSD/MTA Balancer 3',
+    name: ' mUSD/FURY Balancer 3',
     decimals: 18,
     symbol: 'BPT',
     icon: Balancer,
@@ -56,7 +56,7 @@ export const legacyPools: Contract[] = [
   {
     address: '0xf4a7d2d85f4ba11b5c73c35e27044c0c49f7f027',
     type: 'legacypool',
-    name: 'mUSD/MTA Balancer 4',
+    name: 'mUSD/FURY Balancer 4',
     decimals: 18,
     symbol: 'BPT',
     icon: Balancer,
@@ -78,11 +78,11 @@ export const legacyPools: Contract[] = [
   {
     address: '0xaE8bC96DA4F9A9613c323478BE181FDb2Aa0E1BF',
     type: 'legacypool',
-    name: 'vMTA',
+    name: 'vFURY',
     decimals: 18,
-    symbol: 'MTA',
-    icon: MTA,
-    abi: vmtaABI,
+    symbol: 'FURY',
+    icon: FURY,
+    abi: vfuryABI,
     balanceFn: 'staticBalanceOf',
     chainId: mainnet.id,
     stakingTokenAddress: '0xa3BeD4E1c75D00fa6f4E5E6922DB7261B5E9AcD2',

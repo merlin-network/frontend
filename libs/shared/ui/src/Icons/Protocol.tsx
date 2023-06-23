@@ -2,7 +2,7 @@ import {
   AaveProtocol,
   ConvexProtocol,
   CurveProtocol,
-  MStableProtocol,
+  MFuryProtocol,
   UniswapProtocol,
 } from '@frontend/shared-icons';
 import { SvgIcon } from '@mui/material';
@@ -19,7 +19,7 @@ export const supportedProtocols: Record<
   SupportedProtocol,
   (props: SvgIconProps) => JSX.Element
 > = {
-  mstable: MStableProtocol,
+  mfury: MFuryProtocol,
   convex: ConvexProtocol,
   curve: CurveProtocol,
   aave: AaveProtocol,

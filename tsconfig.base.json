@@ -21,13 +21,13 @@
       "@frontend/lts-constants": ["libs/lts/constants/src/index.ts"],
       "@frontend/lts-settings": ["libs/lts/settings/src/index.ts"],
       "@frontend/lts-withdraw": ["libs/lts/withdraw/src/index.ts"],
-      "@frontend/mstable-data-access": [
-        "libs/mstable/data-access/src/index.ts"
+      "@frontend/mfury-data-access": [
+        "libs/mfury/data-access/src/index.ts"
       ],
-      "@frontend/mstable-explore": ["libs/mstable/explore/src/index.ts"],
-      "@frontend/mstable-metavault": ["libs/mstable/meta-vault/src/index.ts"],
-      "@frontend/mstable-settings": ["libs/mstable/settings/src/index.ts"],
-      "@frontend/mstable-theme": ["libs/mstable/theme/src/index.ts"],
+      "@frontend/mfury-explore": ["libs/mfury/explore/src/index.ts"],
+      "@frontend/mfury-metavault": ["libs/mfury/meta-vault/src/index.ts"],
+      "@frontend/mfury-settings": ["libs/mfury/settings/src/index.ts"],
+      "@frontend/mfury-theme": ["libs/mfury/theme/src/index.ts"],
       "@frontend/shared-constants": ["libs/shared/constants/src/index.ts"],
       "@frontend/shared-icons": ["libs/shared/icons/src/index.ts"],
       "@frontend/shared-providers": ["libs/shared/providers/src/index.ts"],

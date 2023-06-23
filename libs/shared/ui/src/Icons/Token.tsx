@@ -4,14 +4,14 @@ import {
   Ether,
   FEI,
   FRAX,
+  FURY,
   LUSD,
   MBTC,
-  MTA,
   MUSD,
   MvDAI,
   MvETH,
   MvFrax,
-  MvMTA,
+  MvFURY,
   MvMUSD,
   MvUSDC,
   RAI,
@@ -21,7 +21,7 @@ import {
 import { SvgIcon } from '@mui/material';
 import { CurrencyCircleDollar } from 'phosphor-react';
 
-import type { SupportedToken } from '@mstable/metavaults-web';
+import type { SupportedToken } from '@mfury/metavaults-web';
 import type { SvgIconProps } from '@mui/material';
 
 type AdditionalToken =
@@ -29,7 +29,7 @@ type AdditionalToken =
   | 'mvdai'
   | 'mveth'
   | 'mvfrax'
-  | 'mvmta'
+  | 'mvfury'
   | 'mvmusd'
   | 'mvusdc';
 
@@ -44,7 +44,7 @@ export const supportedTokens: Partial<
   eth: Ether,
   fei: FEI,
   mbtc: MBTC,
-  mta: MTA,
+  fury: FURY,
   musd: MUSD,
   rai: RAI,
   usdc: USDC,
@@ -56,7 +56,7 @@ export const supportedTokens: Partial<
   mvdai: MvDAI,
   mveth: MvETH,
   mvfrax: MvFrax,
-  mvmta: MvMTA,
+  mvfury: MvFURY,
   mvmusd: MvMUSD,
   mvusdc: MvUSDC,
 };

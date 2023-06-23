@@ -34,7 +34,7 @@ jobs:
           yarn install
           yarn run nx prepare subgraph --network=mainnet
           yarn run nx build subgraph
-          yarn graph deploy --studio mstable-metavault -o ./libs/subgraph/build --deploy-key $THE_GRAPH_API_KEY --version-label $COMMIT_HASH ./libs/subgraph/subgraph.yaml
+          yarn graph deploy --studio mfury-metavault -o ./libs/subgraph/build --deploy-key $THE_GRAPH_API_KEY --version-label $COMMIT_HASH ./libs/subgraph/subgraph.yaml
 
       - name: Discord notification
         env:
@@ -42,4 +42,4 @@ jobs:
           COMMIT_HASH: ${{ github.sha }}
         uses: Ilshidur/action-discord@0.3.2
         with:
-          args: "🤖 New Meta Vault subgraph **{{ COMMIT_HASH }}** 🚀 The Graph: https://thegraph.com/studio/subgraph/mstable-meta-vaults/"
+          args: "🤖 New Meta Vault subgraph **{{ COMMIT_HASH }}** 🚀 The Graph: https://thegraph.com/studio/subgraph/mfury-meta-vaults/"

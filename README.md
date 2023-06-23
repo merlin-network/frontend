@@ -1,26 +1,26 @@
 <br/>
-<img src="https://mstable.org/assets/img/email/mstable_logo_horizontal_black.png" width="420" >
+<img src="https://mfury.org/assets/img/email/mfury_logo_horizontal_black.png" width="420" >
 
 <br />
 
-# mStable Frontend
+# mFury Frontend
 
-This repository contains the latest frontend applications of mStable. It is a monorepo comprising multiple mStable apps, all built using common libraries and a common UI.
+This repository contains the latest frontend applications of mFury. It is a monorepo comprising multiple mFury apps, all built using common libraries and a common UI.
 
 ## Apps
 
-The following table lists the mStable apps included in this repository
+The following table lists the mFury apps included in this repository
 
 | Status | Name              | Nx project | Port | Public hosts                                            |
 | :---: | :---------------- | :--------- | :--- | :------------------------------------------------------ |
-| ✅    | Meta Vaults       | `mstable`  | 4200 | [Google Cloud](https://yield.mstable.org/)              |
-| ✅    | Long Term Support | `lts`      | 4201 | [Google Cloud](https://withdraw.mstable.org/) |
+| ✅    | Meta Vaults       | `mfury`  | 4200 | [Google Cloud](https://yield.mfury.org/)              |
+| ✅    | Long Term Support | `lts`      | 4201 | [Google Cloud](https://withdraw.mfury.org/) |
 
 ## Quickstart
 To get started with this repository, run the following commands:
 
 ```bash
-git clone https://github.com/mstable/frontend.git
+git clone https://github.com/mfury/frontend.git
 cd frontend
 yarn
 ```
@@ -29,14 +29,14 @@ If you encounter any issues during the installation process, please refer to the
 ### Running an app
 
 ```bash
-yarn nx serve mstable
+yarn nx serve mfury
 yarn nx serve lts
 ```
 
 ### Building an app
 
 ```bash
-yarn nx run build mstable
+yarn nx run build mfury
 yarn nx run build lts
 ```
 

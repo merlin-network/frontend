@@ -10,14 +10,14 @@ export const Hero = (props: StackProps) => {
     <Stack justifyContent="center" alignItems="center" {...props}>
       <Typography variant="h1" py={4}>
         {intl.formatMessage({
-          defaultMessage: 'mStable Withdraw',
-          id: '/b/fRE',
+          defaultMessage: 'mFury Withdraw',
+          id: 'Et6LvI',
         })}
       </Typography>
       <Typography textAlign="center">
         {intl.formatMessage({
-          defaultMessage: `This app simplifies the process of exiting all mStable products and positions.<br></br>By connecting your wallet, you can easily access your remaining balances and initiate the withdrawal process.`,
-          id: 'R0V7vk',
+          defaultMessage: `This app simplifies the process of exiting all mFury products and positions.<br></br>By connecting your wallet, you can easily access your remaining balances and initiate the withdrawal process.`,
+          id: '/4MXW3',
         })}
       </Typography>
     </Stack>

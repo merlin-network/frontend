@@ -128,7 +128,7 @@ export const StakedTokenBPTABI = [
     anonymous: false,
     inputs: [
       { indexed: false, internalType: 'uint256', name: 'bpt', type: 'uint256' },
-      { indexed: false, internalType: 'uint256', name: 'mta', type: 'uint256' },
+      { indexed: false, internalType: 'uint256', name: 'fury', type: 'uint256' },
     ],
     name: 'FeesConverted',
     type: 'event',

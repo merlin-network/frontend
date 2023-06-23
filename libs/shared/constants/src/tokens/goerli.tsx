@@ -93,8 +93,8 @@ export const toksGoerli: Token[] = [
   },
   {
     address: '0xcf52b9a188705Ae54DcC899250A8B3506552C675',
-    name: 'MTA',
-    symbol: 'MTA',
+    name: 'FURY',
+    symbol: 'FURY',
     decimals: 18,
     chainId: 5,
     abi: erc20ABI,

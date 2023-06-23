@@ -1,6 +1,6 @@
 {
   "6T7RIi": {
-    "defaultMessage": "BuyBack MTA"
+    "defaultMessage": "BuyBack FURY"
   },
   "8ywLSf": {
     "defaultMessage": "Twitter"
@@ -30,16 +30,16 @@
     "defaultMessage": "Withdraw to stablecoins"
   },
   "5WragJ": {
-    "defaultMessage": "Burn your MTA tokens to receive mStable Treasury Yield tokens"
+    "defaultMessage": "Burn your FURY tokens to receive mFury Treasury Yield tokens"
   },
   "5eoReb": {
-    "defaultMessage": "Burn MTA to receive {yield} vault tokens on Optimism at a value of <b>{price}</b> per MTA.<br></br>Here is the {roadmap} to help you make a better informed decision."
+    "defaultMessage": "Burn FURY to receive {yield} vault tokens on Optimism at a value of <b>{price}</b> per FURY.<br></br>Here is the {roadmap} to help you make a better informed decision."
   },
   "8cv9D4": {
     "defaultMessage": "Next Step"
   },
   "Au/yTc": {
-    "defaultMessage": "MTA Buyback"
+    "defaultMessage": "FURY Buyback"
   },
   "CuTvKy": {
     "defaultMessage": "Swap on Velodrome"
@@ -48,28 +48,28 @@
     "defaultMessage": "Price is more favorable on Velodrome"
   },
   "NnFu82": {
-    "defaultMessage": "Withdraw your mStable Treasury Yield tokens to stables"
+    "defaultMessage": "Withdraw your mFury Treasury Yield tokens to stables"
   },
   "URTaZg": {
-    "defaultMessage": "If you burned MTA from Ethereum, please wait while the bridge issues your MTy tokens."
+    "defaultMessage": "If you burned FURY from Ethereum, please wait while the bridge issues your MTy tokens."
   },
   "WCaf5C": {
     "defaultMessage": "Approve"
   },
   "WZwD4F": {
-    "defaultMessage": "Burn MTA and receive MTy on Optimism"
+    "defaultMessage": "Burn FURY and receive MTy on Optimism"
   },
   "a42kxt": {
-    "defaultMessage": "Your mStable Treasury Yield tokens are earning yield and you can hold on to them.<br></br>Optionally you can go to dHEDGE app to withdraw your MTy tokens to stablecoins."
+    "defaultMessage": "Your mFury Treasury Yield tokens are earning yield and you can hold on to them.<br></br>Optionally you can go to dHEDGE app to withdraw your MTy tokens to stablecoins."
   },
   "cyR7Kh": {
     "defaultMessage": "Back"
   },
   "d7AHfy": {
-    "defaultMessage": "Burn your MTA and receive stablecoins"
+    "defaultMessage": "Burn your FURY and receive stablecoins"
   },
   "iD4mN7": {
-    "defaultMessage": "mStable roadmap"
+    "defaultMessage": "mFury roadmap"
   },
   "kaPKOB": {
     "defaultMessage": "Insufficient balance"
@@ -84,7 +84,7 @@
     "defaultMessage": "Burn"
   },
   "v1vY2k": {
-    "defaultMessage": "Exchange rate <b>{price} USD</b> per MTA. This is the floor price for the MTA token, backed by the mStable Treasury Yield.<br></br> If burning MTA from Ethereum, it may take a few minutes to be issued yield tokens on Optimism."
+    "defaultMessage": "Exchange rate <b>{price} USD</b> per FURY. This is the floor price for the FURY token, backed by the mFury Treasury Yield.<br></br> If burning FURY from Ethereum, it may take a few minutes to be issued yield tokens on Optimism."
   },
   "vclhrb": {
     "defaultMessage": "Balance: {balance}"
@@ -96,7 +96,7 @@
     "defaultMessage": "Withdraw to stables"
   },
   "yNEh8X": {
-    "defaultMessage": "mStable Treasury Yield"
+    "defaultMessage": "mFury Treasury Yield"
   },
   "5ObBlW": {
     "defaultMessage": "Dark Mode"
@@ -111,7 +111,7 @@
     "defaultMessage": "General Settings"
   },
   "/b/fRE": {
-    "defaultMessage": "mStable Withdraw"
+    "defaultMessage": "mFury Withdraw"
   },
   "47FYwb": {
     "defaultMessage": "Cancel"
@@ -120,7 +120,7 @@
     "defaultMessage": "mAssets"
   },
   "R0V7vk": {
-    "defaultMessage": "This app simplifies the process of exiting all mStable products and positions.<br></br>By connecting your wallet, you can easily access your remaining balances and initiate the withdrawal process."
+    "defaultMessage": "This app simplifies the process of exiting all mFury products and positions.<br></br>By connecting your wallet, you can easily access your remaining balances and initiate the withdrawal process."
   },
   "SRo6uF": {
     "defaultMessage": "Meta Vaults"
@@ -177,7 +177,7 @@
     "defaultMessage": "Redeem Vault"
   },
   "yzP6XU": {
-    "defaultMessage": "MTA Governance"
+    "defaultMessage": "FURY Governance"
   },
   "zS899f": {
     "defaultMessage": "Allow {slippage} of slippage"
@@ -186,7 +186,7 @@
     "defaultMessage": "Market Neutral"
   },
   "7CAm2s": {
-    "defaultMessage": "mStable is a protocol for yield aggregation and diversification."
+    "defaultMessage": "mFury is a protocol for yield aggregation and diversification."
   },
   "B4cMY/": {
     "defaultMessage": "Super good looking"
@@ -219,7 +219,7 @@
     "defaultMessage": "This Strategy is super cool, I would even dare to say, HOT. Stay tune for more awesomeness!"
   },
   "il6pe+": {
-    "defaultMessage": "Yeah only mStable baby!"
+    "defaultMessage": "Yeah only mFury baby!"
   },
   "meocUp": {
     "defaultMessage": "Convex is a platform that boosts rewards for CRV stakers and liquidity providers alike, all in a simple and easy to use interface."
@@ -309,7 +309,7 @@
     "defaultMessage": "If the problem persists, contact us on our {support}."
   },
   "VXQPtq": {
-    "defaultMessage": "mStable has been aquired by dHedge. Following the outlined aquisition update, certain mStable products will be sunset."
+    "defaultMessage": "mFury has been aquired by dHedge. Following the outlined aquisition update, certain mFury products will be sunset."
   },
   "W87PYU": {
     "defaultMessage": "View on {name}"

@@ -4,7 +4,7 @@ import { ReactComponent as ALCXSvg } from './ALCX.svg';
 import { ReactComponent as alUSDSvg } from './alUSD.svg';
 import { ReactComponent as BadgerSvg } from './Badger.svg';
 import { ReactComponent as BalancerSvg } from './Balancer.svg';
-import { ReactComponent as BptMtaEthSvg } from './BPT-MTA-ETH.svg';
+import { ReactComponent as BptFuryEthSvg } from './BPT-FURY-ETH.svg';
 import { ReactComponent as BUSDSvg } from './BUSD.svg';
 import { ReactComponent as CreamSvg } from './Cream.svg';
 import CRVWebp from './crv.webp';
@@ -14,16 +14,16 @@ import { ReactComponent as FAKESvg } from './FAKE.svg';
 import { ReactComponent as FEISvg } from './FEI.svg';
 import { ReactComponent as FLXSvg } from './FLX.svg';
 import { ReactComponent as FRAXSvg } from './FRAX.svg';
+import { ReactComponent as FURYSvg } from './FURY.svg';
 import { ReactComponent as FXSSvg } from './FXS.svg';
 import { ReactComponent as GUSDSvg } from './GUSD.svg';
 import { ReactComponent as HBTCSvg } from './HBTC.svg';
 import { ReactComponent as imBTCSvg } from './imBTC.svg';
-import { ReactComponent as imbtcMtaSvg } from './imbtc-mta.svg';
+import { ReactComponent as imbtcFurySvg } from './imbtc-fury.svg';
 import { ReactComponent as imUSDSvg } from './imUSD.svg';
-import { ReactComponent as imusdMtaSvg } from './imusd-mta.svg';
+import { ReactComponent as imusdFurySvg } from './imusd-fury.svg';
 import { ReactComponent as LUSDSvg } from './LUSD.svg';
 import { ReactComponent as mBTCSvg } from './mBTC.svg';
-import { ReactComponent as MTASvg } from './MTA.svg';
 import { ReactComponent as mUSDSvg } from './mUSD.svg';
 import { ReactComponent as mUSDTransparentSvg } from './mUSD-transparent.svg';
 import { ReactComponent as musd3CRVSvg } from './musd3CRV.svg';
@@ -39,7 +39,7 @@ import { ReactComponent as UniswapSvg } from './Uniswap.svg';
 import { ReactComponent as USDCSvg } from './USDC.svg';
 import { ReactComponent as USDTSvg } from './USDT.svg';
 import { ReactComponent as vaultSvg } from './vault.svg';
-import { ReactComponent as vMTASvg } from './vMTA.svg';
+import { ReactComponent as vFURYSvg } from './vFURY.svg';
 import { ReactComponent as wBTCSvg } from './wBTC.svg';
 
 import type { SvgIconProps } from '@mui/material';
@@ -59,8 +59,8 @@ export const Badger = (props: SvgIconProps) => (
 export const Balancer = (props: SvgIconProps) => (
   <SvgIcon {...props} component={BalancerSvg} viewBox="0 0 258 258" />
 );
-export const BptMtaEth = (props: SvgIconProps) => (
-  <SvgIcon {...props} component={BptMtaEthSvg} viewBox="0 0 31 28" />
+export const BptFuryEth = (props: SvgIconProps) => (
+  <SvgIcon {...props} component={BptFuryEthSvg} viewBox="0 0 31 28" />
 );
 export const BUSD = (props: SvgIconProps) => (
   <SvgIcon {...props} component={BUSDSvg} viewBox="0 0 167 167" />
@@ -100,14 +100,14 @@ export const GUSD = (props: SvgIconProps) => (
 export const HBTC = (props: SvgIconProps) => (
   <SvgIcon {...props} component={HBTCSvg} viewBox="0 0 172 172" />
 );
-export const ImbtcMta = (props: SvgIconProps) => (
-  <SvgIcon {...props} component={imbtcMtaSvg} viewBox="0 0 497 499" />
+export const ImbtcFury = (props: SvgIconProps) => (
+  <SvgIcon {...props} component={imbtcFurySvg} viewBox="0 0 497 499" />
 );
 export const ImBTC = (props: SvgIconProps) => (
   <SvgIcon {...props} component={imBTCSvg} viewBox="0 0 332 332" />
 );
-export const ImusdMta = (props: SvgIconProps) => (
-  <SvgIcon {...props} component={imusdMtaSvg} viewBox="0 0 497 499" />
+export const ImusdFury = (props: SvgIconProps) => (
+  <SvgIcon {...props} component={imusdFurySvg} viewBox="0 0 497 499" />
 );
 export const ImUSD = (props: SvgIconProps) => (
   <SvgIcon {...props} component={imUSDSvg} viewBox="0 0 330 330" />
@@ -118,8 +118,8 @@ export const LUSD = (props: SvgIconProps) => (
 export const MBTC = (props: SvgIconProps) => (
   <SvgIcon {...props} component={mBTCSvg} viewBox="0 0 332 330" />
 );
-export const MTA = (props: SvgIconProps) => (
-  <SvgIcon {...props} component={MTASvg} viewBox="0 0 332 332" />
+export const FURY = (props: SvgIconProps) => (
+  <SvgIcon {...props} component={FURYSvg} viewBox="0 0 332 332" />
 );
 export const MUSDTransparent = (props: SvgIconProps) => (
   <SvgIcon
@@ -167,8 +167,8 @@ export const USDT = (props: SvgIconProps) => (
 export const Vault = (props: SvgIconProps) => (
   <SvgIcon {...props} component={vaultSvg} viewBox="0 0 162 163" />
 );
-export const VMTA = (props: SvgIconProps) => (
-  <SvgIcon {...props} component={vMTASvg} viewBox="0 0 330 330" />
+export const VFURY = (props: SvgIconProps) => (
+  <SvgIcon {...props} component={vFURYSvg} viewBox="0 0 330 330" />
 );
 export const WBTC = (props: SvgIconProps) => (
   <SvgIcon {...props} component={wBTCSvg} viewBox="0 0 109.26 109.26" />

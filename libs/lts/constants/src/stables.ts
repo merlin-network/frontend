@@ -28,7 +28,7 @@ export const stables: Contract[] = [
     address: '0xE840B73E5287865EEc17d250bFb1536704B43B21',
     type: 'stable',
     decimals: 18,
-    symbol: 'mStable USD (Polygon PoS)',
+    symbol: 'mFury USD (Polygon PoS)',
     icon: MUSD,
     abi: StableABI,
     chainId: polygon.id,

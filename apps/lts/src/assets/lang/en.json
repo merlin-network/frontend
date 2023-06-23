@@ -20,7 +20,7 @@
   "/b/fRE": [
     {
       "type": 0,
-      "value": "mStable Withdraw"
+      "value": "mFury Withdraw"
     }
   ],
   "/p1GSi": [
@@ -84,13 +84,13 @@
   "5WragJ": [
     {
       "type": 0,
-      "value": "Burn your MTA tokens to receive mStable Treasury Yield tokens"
+      "value": "Burn your FURY tokens to receive mFury Treasury Yield tokens"
     }
   ],
   "5eoReb": [
     {
       "type": 0,
-      "value": "Burn MTA to receive "
+      "value": "Burn FURY to receive "
     },
     {
       "type": 1,
@@ -112,7 +112,7 @@
     },
     {
       "type": 0,
-      "value": " per MTA."
+      "value": " per FURY."
     },
     {
       "children": [],
@@ -147,7 +147,7 @@
   "6T7RIi": [
     {
       "type": 0,
-      "value": "BuyBack MTA"
+      "value": "BuyBack FURY"
     }
   ],
   "6z2ptx": [
@@ -159,7 +159,7 @@
   "7CAm2s": [
     {
       "type": 0,
-      "value": "mStable is a protocol for yield aggregation and diversification."
+      "value": "mFury is a protocol for yield aggregation and diversification."
     }
   ],
   "8XZjyW": [
@@ -207,7 +207,7 @@
   "Au/yTc": [
     {
       "type": 0,
-      "value": "MTA Buyback"
+      "value": "FURY Buyback"
     }
   ],
   "B4cMY/": [
@@ -291,7 +291,7 @@
   "NnFu82": [
     {
       "type": 0,
-      "value": "Withdraw your mStable Treasury Yield tokens to stables"
+      "value": "Withdraw your mFury Treasury Yield tokens to stables"
     }
   ],
   "PXAur5": [
@@ -309,7 +309,7 @@
   "R0V7vk": [
     {
       "type": 0,
-      "value": "This app simplifies the process of exiting all mStable products and positions."
+      "value": "This app simplifies the process of exiting all mFury products and positions."
     },
     {
       "children": [],
@@ -348,7 +348,7 @@
   "URTaZg": [
     {
       "type": 0,
-      "value": "If you burned MTA from Ethereum, please wait while the bridge issues your MTy tokens."
+      "value": "If you burned FURY from Ethereum, please wait while the bridge issues your MTy tokens."
     }
   ],
   "UkXeBW": [
@@ -382,7 +382,7 @@
   "VXQPtq": [
     {
       "type": 0,
-      "value": "mStable has been aquired by dHedge. Following the outlined aquisition update, certain mStable products will be sunset."
+      "value": "mFury has been aquired by dHedge. Following the outlined aquisition update, certain mFury products will be sunset."
     }
   ],
   "VlABxn": [
@@ -416,7 +416,7 @@
   "WZwD4F": [
     {
       "type": 0,
-      "value": "Burn MTA and receive MTy on Optimism"
+      "value": "Burn FURY and receive MTy on Optimism"
     }
   ],
   "X0zKZO": [
@@ -452,7 +452,7 @@
   "a42kxt": [
     {
       "type": 0,
-      "value": "Your mStable Treasury Yield tokens are earning yield and you can hold on to them."
+      "value": "Your mFury Treasury Yield tokens are earning yield and you can hold on to them."
     },
     {
       "children": [],
@@ -497,7 +497,7 @@
   "d7AHfy": [
     {
       "type": 0,
-      "value": "Burn your MTA and receive stablecoins"
+      "value": "Burn your FURY and receive stablecoins"
     }
   ],
   "djdjSw": [
@@ -587,13 +587,13 @@
   "iD4mN7": [
     {
       "type": 0,
-      "value": "mStable roadmap"
+      "value": "mFury roadmap"
     }
   ],
   "il6pe+": [
     {
       "type": 0,
-      "value": "Yeah only mStable baby!"
+      "value": "Yeah only mFury baby!"
     }
   ],
   "jvo0vs": [
@@ -733,7 +733,7 @@
     },
     {
       "type": 0,
-      "value": " per MTA. This is the floor price for the MTA token, backed by the mStable Treasury Yield."
+      "value": " per FURY. This is the floor price for the FURY token, backed by the mFury Treasury Yield."
     },
     {
       "children": [],
@@ -742,7 +742,7 @@
     },
     {
       "type": 0,
-      "value": " If burning MTA from Ethereum, it may take a few minutes to be issued yield tokens on Optimism."
+      "value": " If burning FURY from Ethereum, it may take a few minutes to be issued yield tokens on Optimism."
     }
   ],
   "vS/YSY": [
@@ -800,7 +800,7 @@
   "yNEh8X": [
     {
       "type": 0,
-      "value": "mStable Treasury Yield"
+      "value": "mFury Treasury Yield"
     }
   ],
   "yuiyES": [
@@ -812,7 +812,7 @@
   "yzP6XU": [
     {
       "type": 0,
-      "value": "MTA Governance"
+      "value": "FURY Governance"
     }
   ],
   "zS899f": [
